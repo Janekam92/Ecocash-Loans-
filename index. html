@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoCash Loans Zimbabwe</title>
+<style>
+body{font-family:sans-serif;background:#f0fdf4;margin:0;padding:15px}
+.box{background:white;padding:20px;border-radius:15px;max-width:400px;margin:auto;box-shadow:0 4px 10px #0002}
+h2{color:#16a34a;text-align:center}
+input{width:100%;padding:12px;margin:8px 0;box-sizing:border-box;border:1px solid #ccc;border-radius:8px}
+button{background:#16a34a;color:white;padding:15px;width:100%;border:none;border-radius:10px;font-size:18px;font-weight:bold}
+.calc{background:#dcfce7;padding:10px;border-radius:8px;margin:10px 0}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>💰 EcoCash Loans</h2>
+<p style="text-align:center">Pata Loan Haraka - M-Pesa / EcoCash</p>
+<input id="name" placeholder="Jina Kamili">
+<input id="idnum" placeholder="ID Number">
+<input id="phone" placeholder="Namba ya Simu 07xx">
+<input id="amount" type="number" placeholder="Kiasi - 1000 hadi 50000" oninput="hesabu()">
+<div id="hesabu" class="calc">Andika kiasi uone riba</div>
+<button onclick="omba()">OMBA LOAN SASA</button>
+<p id="msg"></p>
+<p style="font-size:12px;text-align:center">Safe & Fast - Eldoret Zimbabwe</p>
+</div>
+<script>
+function hesabu(){
+let a=document.getElementById('amount').value;
+if(a){let r=a*0.1; document.getElementById('hesabu').innerHTML=`Riba 10%: $${r}<br><b>Jumla: $${a*1+ r*1}</b>`;}
+}
+function omba(){
+let n=document.getElementById('name').value;
+let p=document.getElementById('phone').value;
+let am=document.getElementById('amount').value;
+if(!n||!p||!am){document.getElementById('msg').innerHTML="❌ Jaza zote!";return;}
+document.getElementById('msg').innerHTML="✅ Asante "+n+"! Ombi la $"+am+" limepokelewa. Tutakutumia EcoCash ndani ya dakika 30.";
+}
+</script>
+</body>
+</html>
